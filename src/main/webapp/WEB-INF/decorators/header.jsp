@@ -12,34 +12,13 @@
     <meta name="author" content="">
 
     <title>SoftIVenture</title>
-<!-- Bootstrap Core CSS -->
-    <link href="<c:url value = "/resources/css/bootstrap.min.css"/>" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="<c:url value = "/resources/css/modern-business.css"/>" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="<c:url value = "/resources/font-awesome-4.1.0/css/font-awesome.min.css"/>" rel="stylesheet" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 
 </head>
 <body>
  <!-- Navigation -->
    <!-- <nav class="navbar navbar-default navbar-fixed-top" role="navigation" width ='4000' height = '4000'> -->
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >
-
-        <div class="container">
+        <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -48,14 +27,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button> 
-</br>
-             <a href='index.html'><img src="<c:url value = "/resources/img/logo.png "/>"
-					alt='W3Schools.com' width='280' height='52' style='border: 0;'></a>
+             <a href='index.html'><img src="<c:url value = "/resources/images/logo.png"/>"
+					alt='W3Schools.com' width='200' height='60' style='border: 0;'></a>
 
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-</br>
                 <ul class="nav navbar-nav navbar-right">
 <li>
                         <a href="#">Home</a>
@@ -85,12 +62,5 @@
         <!-- /.container -->
 </br>
     </nav>
-<!-- jQuery Version 1.11.0 -->
-    <script src="<c:url value="/resources/js/jquery-1.11.0.js"/>"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="<c:url value="/resources/js/bootstrap.min.js"/>"></script>
-
-
 </body>
 </html>
