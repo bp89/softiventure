@@ -155,6 +155,6 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="<c:url value="/resources/js/bootstrap.min.js"/>"></script>
 
-hello ooooooooooooo
+
 </body>
 </html>
