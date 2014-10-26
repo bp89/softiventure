@@ -52,41 +52,43 @@
                 <div class="col-lg-12 text-center">
 
                     <h2 class="section-heading">Our Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <br>
+                   <!--  <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>  -->
                 </div>
       </div> <!-- row -->
             <div class="row text-center">
                 <div class="col-md-3">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-desktop fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Web Development</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p class="text-muted">With a robust, affordable website designed, developed and supported by SoftIVenture, you'll swing the competitive edge in your direction when it comes to getting the word out about your business.
+                    </p>
                 </div>
 <div class="col-md-3">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-tablet fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Mobile Apps</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p class="text-muted">Our Mobile Application Development  team specialize in building Native , Cross Compiled and lightweight Android applications, spanning the breadth of modern application development.</p>
                 </div>
                 <div class="col-md-3">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Hosting And Support</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p class="text-muted">With hosting your site and supporting you by assistance in day to day activity or future maintenance, We'll let you focus on your Core business.</p>
                 </div>
                 <div class="col-md-3">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-users fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Professional Training</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p class="text-muted">Get trained with us in most demanding and latest technologies like Java,J2EE,Android,IOS,Web Services together with Professional skills development.</p>
                 </div>
             </div> <!-- / .row text center -->
 
@@ -103,7 +105,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">About Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    </br>
+                  <!--  <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                 </div>
             </div>
             <div class="row">
@@ -115,11 +118,13 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                   
+                                    <h4 class="subheading">Development</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">Soft I Venture is a leading custom software solutions team with focus on providing development services using latest innovative technologies effectively.</br> 
+We deliver significant value to our customers by providing cutting edge technology solutions, project management expertise, analysis of projects at business & commercial level and above all a strong code of ethics & an unwavering commitment towards customer excellence.
+                                    </p>
                                 </div>
                             </div>
                         </li>
@@ -129,11 +134,11 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
+                                  
+                                    <h4 class="subheading">Training</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">Besides development We are also expertise to train individuals to get placed .</br>The training at Soft I Venture is provided by a team of trainers who have master's and post-graduate qualification and impart the best training. They are well conversant with the recent industrial knowledge. So, the training imparts give a better quality to the students of Soft I Venture.</p>
                                 </div>
                             </div>
                         </li>
@@ -141,7 +146,7 @@
                             <div class="timeline-image">
                                 <h4>Be Part
                                     <br>Of Our
-                                    <br>Story!</h4>
+                                    <br>Organization!</h4>
                             </div>
                         </li>
                     </ul>

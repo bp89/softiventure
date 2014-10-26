@@ -79,7 +79,7 @@
                 <p>
                     Sec.-88, Greater Faridabad, 121002 
                 </p>
-                <p><i class="fa fa-phone"></i> 
+                <p><i class="fa fa-mobile"></i> 
                     <abbr title="Phone">M</abbr>: +91 - 9654532022</p>
                 <p><i class="fa fa-envelope-o"></i> 
                     <abbr title="Email">E</abbr>: <a href="mailto:name@example.com">softiventure@gmail.com</a>
