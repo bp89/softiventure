@@ -29,25 +29,18 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome! The client locale is {}.", locale);
-		/*
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
 		
-		String formattedDate = dateFormat.format(date);
-		
-		model.addAttribute("serverTime", formattedDate );*/
 		
 		return "home";
 	}
 
 	@RequestMapping(value = "/contact", method = RequestMethod.GET)
-	public String contact1(Locale locale, Model model,HttpServletRequest request) {
-		logger.info("Welcome career! The client locale is {}.", locale);
+	public String contactGet(HttpServletRequest request) {
+
 		return "contact";
 	}
 	@RequestMapping(value = {"/contact"}, method = RequestMethod.POST)
-	   // @RequestMapping(method = RequestMethod.POST)
-	    public String doSendEmail(HttpServletRequest request) {
+	    public String contactPost(HttpServletRequest request) {
 	        // takes input from e-mail form
 	        String recipientAddress = request.getParameter("email");
 	        String name = request.getParameter("name");
@@ -74,8 +67,8 @@ public class HomeController {
 	        email1.setSubject("Thanks for mail");
 	        email1.setText("thankyou for mailing us");
 	        mailSender.send(email1);
-	        // forwards to the view named "Result"
-	        return "Result";
+	        // forwards to the view named "home"
+	        return "home";
 	    }
 	        
 }
