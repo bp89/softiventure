@@ -1,5 +1,9 @@
 <sitemesh>
- <mapping path="/*" decorator="/WEB-INF/decorators/defaultDecorator.jsp"/>
- <mapping path="/one" decorator="/WEB-INF/decorators/defaultDecorator.jsp"/>
- <mapping path="/two" decorator="/WEB-INF/decorators/defaultDecorator.jsp"/>
+ <!-- <mapping path="/home" decorator="/WEB-INF/decorators/defaultDecorator.jsp"/>
+  <mapping path="/contact" decorator="/WEB-INF/decorators/defaultDecorator.jsp"/>
+   <mapping path="/error" decorator="/WEB-INF/decorators/defaultDecorator.jsp"/>
+  <mapping path="/header" decorator="/WEB-INF/decorators/defaultDecorator.jsp"/>
+   <mapping path="/footer" decorator="/WEB-INF/decorators/defaultDecorator.jsp"/> -->
+    <mapping path="/*" decorator="/WEB-INF/decorators/defaultDecorator.jsp"/>
+   <!--   <mapping path="/secured/*" decorator=""/> -->
 </sitemesh>

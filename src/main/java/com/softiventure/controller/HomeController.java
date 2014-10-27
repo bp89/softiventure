@@ -70,5 +70,24 @@ public class HomeController {
 	        // forwards to the view named "home"
 	        return "home";
 	    }
-	        
+	 @RequestMapping("/login")
+	    public String two(Model model) {
+	        model.addAttribute("message", "two for login executed just now!");
+	        return "login";
+	    }
+	  
+	    @RequestMapping("/secured/welcome")
+	    public String accessSecuredPage(Model model) {
+	        model.addAttribute("message", "Only you are authenticated and authorized to view this page.");
+	 
+	        return "/secured/welcome";
+	    }
+	    @RequestMapping(value = "/home1", method = RequestMethod.GET)
+		public String home1(Locale locale, Model model) {
+			logger.info("Welcome! The client locale is {}.", locale);
+			
+			
+			return "home1";
+		}
+
 }
