@@ -71,7 +71,7 @@ public class HomeController {
 	        return "home";
 	    }
 	 @RequestMapping("/login")
-	    public String two(Model model) {
+	    public String login(Model model) {
 	        model.addAttribute("message", "two for login executed just now!");
 	        return "login";
 	    }
@@ -82,12 +82,12 @@ public class HomeController {
 	 
 	        return "/secured/welcome";
 	    }
-	    @RequestMapping(value = "/home1", method = RequestMethod.GET)
-		public String home1(Locale locale, Model model) {
+	    @RequestMapping(value = "/admin", method = RequestMethod.GET)
+		public String admin(Locale locale, Model model) {
 			logger.info("Welcome! The client locale is {}.", locale);
 			
 			
-			return "home1";
+			return "admin";
 		}
 
 }
