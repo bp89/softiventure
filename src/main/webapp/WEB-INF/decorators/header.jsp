@@ -35,8 +35,26 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
 <li>
-                        <a href="#">Home</a>
+                        <a href="home">Home</a>
                     </li>
+
+<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu">
+                <ul class='list-inline'>
+                    <li class = "Numberlist"><a href="#" id="">Grails</a>
+                    </li>
+                    <li class = "Numberlist"><a href="#" id="">Java</a>
+                    </li>
+                    <li class = "Numberlist"><a href="#" id="">Android</a>
+                    </li>
+                    <li class = "Numberlist"><a href="#" id="">Angular js</a>
+                    </li>
+                    <li class = "Numberlist"><a href="#" id="">HTML5</a>
+                    </li>
+                </ul>
+</ul>
+</li>
 <li>
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
@@ -53,7 +71,7 @@
                     </li>
                     
                     <li>
-                        <a href="contact.html">Contact Us</a>
+                        <a href="contact">Contact Us</a>
                     </li>
                 </ul>
             </div>

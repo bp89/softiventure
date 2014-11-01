@@ -63,7 +63,7 @@
                         <i class="fa fa-desktop fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Web Development</h4>
-                    <p class="text-muted">With a robust, affordable website designed, developed and supported by SoftIVenture, you'll swing the competitive edge in your direction when it comes to getting the word out about your business.
+                    <p class="text-muted">With a robust, affordable website designed, developed and supported by SoftIVenture, you'll swing the competitive edge in your direction when it comes to getting the word out about your business.<a href="webdevelopment">Read More</a>
                     </p>
                 </div>
 <div class="col-md-3">
@@ -72,7 +72,7 @@
                         <i class="fa fa-tablet fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Mobile Apps</h4>
-                    <p class="text-muted">Our Mobile Application Development  team specialize in building Native , Cross Compiled and lightweight Android applications, spanning the breadth of modern application development.</p>
+                    <p class="text-muted">Our Mobile Application Development  team specialize in building Native , Cross Compiled and lightweight Android applications, spanning the breadth of modern application development.</br><a href="mobileapps">Read More</a></p>
                 </div>
                 <div class="col-md-3">
                     <span class="fa-stack fa-4x">
@@ -80,7 +80,7 @@
                         <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Hosting And Support</h4>
-                    <p class="text-muted">With hosting your site and supporting you by assistance in day to day activity or future maintenance, We'll let you focus on your Core business.</p>
+                    <p class="text-muted">With hosting your site and supporting you by assistance in day to day activity or future maintenance, We'll let you focus on your Core business.</br><a href="mobileapps">Read More</a></p>
                 </div>
                 <div class="col-md-3">
                     <span class="fa-stack fa-4x">
@@ -88,7 +88,7 @@
                         <i class="fa fa-users fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Professional Training</h4>
-                    <p class="text-muted">Get trained with us in most demanding and latest technologies like Java,J2EE,Android,IOS,Web Services together with Professional skills development.</p>
+                    <p class="text-muted">Get trained with us in most demanding and latest technologies like Java,J2EE,Android,IOS,Web Services together with Professional skills development. <a href="training">Read More</a></p>
                 </div>
             </div> <!-- / .row text center -->
 

@@ -33,7 +33,21 @@ public class HomeController {
 		
 		return "home";
 	}
-
+	@RequestMapping(value = "/webdevelopment", method = RequestMethod.GET)
+	public String web(Locale locale, Model model,HttpServletRequest request) {
+		logger.info("Welcome web career! The client locale is {}.", locale);
+		return "webdevelopment";
+	}
+	@RequestMapping(value = "/mobileapps", method = RequestMethod.GET)
+	public String mobile(Locale locale, Model model,HttpServletRequest request) {
+		logger.info("Welcome mobile career! The client locale is {}.", locale);
+		return "mobileapps";
+	}
+	@RequestMapping(value = "/training", method = RequestMethod.GET)
+	public String training(Locale locale, Model model,HttpServletRequest request) {
+		logger.info("Welcome training career! The client locale is {}.", locale);
+		return "training";
+	}
 	@RequestMapping(value = "/contact", method = RequestMethod.GET)
 	public String contactGet(HttpServletRequest request) {
 
