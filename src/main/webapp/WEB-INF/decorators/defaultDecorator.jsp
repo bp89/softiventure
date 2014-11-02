@@ -48,9 +48,13 @@
 </head>
  
  <body>
- <jsp:include page="header.jsp"/>  
+ <div style="padding-bottom:40px" class="container-fluid">
+ <jsp:include page="header.jsp"/>
+ </div>  
  <a id="top" title="Back to Top"><img src="resources/images/icon_gototop.png"/></a>
+
 <sitemesh:write property='body'/> 
+
 <jsp:include page = "footer.jsp" />
 
  <script>
