@@ -316,6 +316,46 @@ h4{
     }
 }
 
+/* About Styles */
+
+.sblock {
+    padding: 0px 0;
+background-color: #CCCC99;  
+//    background-size: cover;
+}
+
+
+.bg-light-gray {
+    background-color: #f7f7f7;
+}
+.team-member {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team-member img {
+    margin: 0 auto;
+    border: 7px solid #fff;
+}
+
+.team-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+
+.team-member p {
+    margin-top: 0;
+}
+aside.clients img {
+    margin: 50px auto;
+}
+.btnformat{
+font-weight:700;
+font-size: 35px;
+color: #ffffff;
+font-style:italic;
+}
 
 /* Footer Styles */
 

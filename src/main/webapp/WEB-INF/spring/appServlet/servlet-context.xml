@@ -21,30 +21,8 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.softiventure.controller" />
+	<context:component-scan base-package="com.a.b" />
 	
-	<beans:bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
-        <beans:property name="host" value="smtp.gmail.com" />
-         <beans:property name="port" value="587" /> 
-       <!--  <beans:property name="port" value="2525" /> -->
-       <!-- <beans:property name="port" value="465" /> -->
-        <beans:property name="username" value="robertjenny27@gmail.com" />
-        <beans:property name="password" value="robertjenny2727" />
-        <beans:property name="javaMailProperties">
-            <beans:props>
-                <beans:prop key="mail.transport.protocol">smtp</beans:prop>
-                <beans:prop key="mail.smtp.auth">true</beans:prop>
-                <beans:prop key="mail.smtp.starttls.enable">true</beans:prop>
-            </beans:props>
-        </beans:property>
-    </beans:bean>
-    <beans:bean
-        class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
-        <beans:property name="exceptionMappings">
-            <beans:props>
-                <beans:prop key="java.lang.Exception">Error</beans:prop>
-            </beans:props>
-        </beans:property>
-    </beans:bean>   
+	
 	
 </beans:beans>

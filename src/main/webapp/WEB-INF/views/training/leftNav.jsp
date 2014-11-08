@@ -44,7 +44,7 @@
 							<li><a href="#">Core Java</a></li>
 							<li><a href="#">Advance java</a></li>
 							<li><a data-toggle="collapse" data-parent="#menu-bar"
-						href="#collapseTwo"> Framework </a>
+						href="#collapseTwo"> Frameworks </a>
 						<ul id="collapseTwo" class="panel-collapse collapse">
 							<li><a href="#">Hibernate</a></li>
 							<li><a href="#">Spring</a></li>
@@ -58,7 +58,8 @@
 							<li><a href="#">jMeter</a></li>
 									<li><a href="#">Mockito</a></li>
 						</ul></li>
-					<li><a href="#">Menu Item 4</a></li>
+						<li><a href="#">MySql</a></li>
+					<li><a href="#">Menu Item 5</a></li>
 					<!-- <li><a href="#">Reviews <span class="badge">1,118</span></a></li> -->
 				</ul>
 			</div>

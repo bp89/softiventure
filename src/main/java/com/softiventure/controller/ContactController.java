@@ -2,21 +2,26 @@ package com.softiventure.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
+//import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class ContactController {
-	private static final Logger logger = LoggerFactory.getLogger(ContactController.class);
+//	private static final Logger logger = LoggerFactory.getLogger(ContactController.class);
 	
 	@Autowired
     private JavaMailSender mailSender;
+	
+	@RequestMapping(value = "/contact", method = RequestMethod.GET)
+	public String contactGet(HttpServletRequest request) {
+
+		return "contact/contact";
+	}
 	
 	@RequestMapping(value = {"/contact"}, method = RequestMethod.POST)
     public String contactPost(HttpServletRequest request) {

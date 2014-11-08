@@ -38,7 +38,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="home">Home</a></li>
 
-				<li class="dropdown"><a href="services" class="dropdown-toggle"
+				<!-- <li class="dropdown"><a href="services" class="dropdown-toggle"
 					data-toggle="dropdown">Services</a>
 					<ul class="dropdown-menu">
 						<li>
@@ -50,8 +50,9 @@
 								<li class="Numberlist"><a href="#" id="">HTML5</a></li>
 							</ul>
 						</li>
-					</ul></li>
-				<li><a class="page-scroll" href="#services">Services</a></li>
+					</ul></li> -->
+				<!-- <li><a class="page-scroll" href="#services">Services</a></li> -->
+				<li><a  href="home#services">Services</a></li>
 				<li><a href="training">Training</a></li>
 				<li><a href="blogs">Blog</a></li>
 
