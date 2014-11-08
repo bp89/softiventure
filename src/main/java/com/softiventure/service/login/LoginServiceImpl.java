@@ -25,13 +25,11 @@ public class LoginServiceImpl implements UserDetailsService {
 	LoginDao loginDao;
 
 	@Override
-	public UserDetails loadUserByUsername(String username)
-			throws UsernameNotFoundException {
+	public UserDetails loadUserByUsername(String username)	throws UsernameNotFoundException {
 
 		Users user = loginDao.findByUserName(username);
 
-		List<GrantedAuthority> authorities = buildUserAuthority(user
-				.getUserRole());
+		List<GrantedAuthority> authorities = buildUserAuthority(user.getUserRole());
 
 		return buildUserForAuthentication(user, authorities);
 	}

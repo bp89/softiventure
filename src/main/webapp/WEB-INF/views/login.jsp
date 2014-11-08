@@ -1,34 +1,50 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-<title>Login | Beingjavaguys.com</title>
+<title>Login</title>
 </head>
-<body>
-	<center>
-		<br /> <br /> <br />
-		<div style="border: 1px solid black; width: 300px; padding-top: 10px;">
-			<br /> Please enter your username and password to login ! <br /> <span
-				style="color: red">${message}</span> <br />
-			<form:form method="post" action="j_spring_security_check"
-				modelAttribute="users">
-				<table>
-					<tr>
-						<td>Username:</td>
-						<td><form:input path="username" /></td>
-					</tr>
-					<tr>
-						<td>Password:</td>
-						<td><form:input path="password" /></td>
-					</tr>
-					<tr>
-						<td>&nbsp;</td>
-						<td><input type="submit" /></td>
-					</tr>
-				</table>
-			</form:form>
-		</div>
-	</center>
+<body >
+<div class="jumbotron">
+    <div class="container-fluid">
+        <h2>Link Share</h2>
+        <h6>Share what you want to.</h6>
+    </div>
+</div>
+<!--login modal-->
+<div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="text-center">Login</h1>
+            </div>
 
+            <div class="container">
+                <span style="font-size: smaller;color: #116644">${flash.logoutMessage}</span>
+                <span style="font-size: smaller;color: #116644">${flash.invalidLogin}</span>
+                <div class="row">
+                    <div class="span4">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <form:form method="post" action="j_spring_security_check"	modelAttribute="users">
+                    <div class="form-group">
+                        <form:input path="username"  placeholder="User Name" class="form-control input-lg" title="Please enter User Name." required=""/>
+                    </div>
+                    <div class="form-group">
+                        <form:password path="password" placeholder="Password" class="form-control input-lg" title="Please enter Password." />
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="${rememberMeParameter}" value="remember"/>
+                        <label for="rememberMe">Remember Me?</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" value="Sign In" class="btn btn-primary btn-lg btn-block" />
+                    </div>
+                </form:form>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
