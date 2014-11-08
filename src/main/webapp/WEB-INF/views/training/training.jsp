@@ -24,15 +24,19 @@
        <!--  /.row -->
 
         <!-- Image Header -->
-        <div class="row">
+         <div class="row">
             <div class="col-lg-12">
               <!--  <img class="img-responsive" src="http://placehold.it/1200x300" alt=""> -->
 <img class="img-responsive" src="<c:url value = "/resources/images/professionals.jpg "/>" height = '1000' width =  '1500' alt="">
 
             </div>
-        </div>
+        </div> 
         <!-- /.row -->
-          <div class="row">
+        </div>
+        <!-- /.container -->
+       
+          <div class="sblock">
+<div class="container">
         <div class="row">
             <div class="col-lg-12">
 </br>
@@ -44,37 +48,50 @@
                             </div>
         </div>
         <!-- /.row -->
-
+        </div>
+        <!-- /. container -->
+        </div>
+        <!-- /. sblock -->
+<div class = "container">
         <!-- Content Row -->
         <div class="row">
+        <div class="col-lg-12">
+        </br>
+        </br>
+        </br>
+        </div>
+        </div>
+        <!-- /. row -->
+        <div class="row">
             <!-- Sidebar Column -->
-<div class="col-md-3">
+<!-- <!-- <div class="col-md-3">
 <ul class="list-group">
     <li class="list-group-item">Pictures</li>
     <li class="list-group-item"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Java <span class="caret"></span> </a> 
-<!-- <ul class="dropdown-submenu"> 
+<ul class="dropdown-submenu"> 
 <li><a href="#">Swing</a></li> 
 <li><a href="#">jMeter</a></li> 
 <li><a href="#">EJB</a></li> 
 <li class="divider"></li> 
-</ul> --> 
+</ul> 
 </li> 
      <li class="list-group-item">Music</li>
     <li class="list-group-item">Videos</li>
 </ul>
-                </div>
+                </div> --> 
 
                        <!-- Content Column -->
+                       <jsp:include page="leftNav.jsp"></jsp:include>
             <div class="col-md-9">
                 <h2>Section Heading</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, et temporibus, facere perferendis veniam beatae non debitis, numquam blanditiis necessitatibus vel mollitia dolorum laudantium, voluptate dolores iure maxime ducimus fugit.</p>
+           
             </div>
         </div>
         <!-- /.row -->
          </div>
-        <!-- /.row -->
-<div class="row">
-            <div class="col-lg-12">
+        <!-- /.container -->
+
 <section>
 </section>
 </div>

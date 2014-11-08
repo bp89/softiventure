@@ -32,6 +32,10 @@
             </div>
         </div>
         <!-- /.row -->
+        </div>
+        <!-- /.container -->
+        <div class="sblock">
+<div class="container">
 <div class="row">
             <div class="col-lg-12">
 
@@ -44,17 +48,24 @@
                             </div>
         </div>
        <!--  /.row -->
-
+       </div>
+       <!-- /.container -->
+</div>
+<!-- /. sblock -->
 
                 
-
+<div class = "container">
         <!-- Service Tabs -->
         <div class="row">
             <div class="col-lg-12">
               
 </br>
+</br>
 
             </div>
+            </div>
+            <!-- /.row -->
+            <div class="row">
             <div class="col-lg-12">
 
                 <ul id="myTab" class="nav nav-tabs nav-justified">
@@ -89,8 +100,8 @@
                     </div>
                 </div> <!-- ./tab content -->
 
-            </div><!-- ./row -->
-
+            </div>
+</div><!-- ./row -->
         </div><!-- ./container -->
 
         

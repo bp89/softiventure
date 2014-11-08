@@ -29,10 +29,15 @@
               <!--  <img class="img-responsive" src="http://placehold.it/1200x300" alt=""> -->
 <img class="img-responsive" src="<c:url value = "/resources/images/professionals.jpg "/>" height = '1000' width =  '1500' alt="">
 
-            </div>
+            
+ </div>
         </div>
         <!-- /.row -->
-        <div class="row">
+        </div>
+        <!-- /.container -->
+        <div class="sblock">
+<div class="container">
+<div class="row">
             <div class="col-lg-12">
 
 </br></br>
@@ -44,19 +49,25 @@
                             </div>
         </div>
        <!--  /.row -->
-
+       </div>
+       <!-- /.container -->
+</div>
+<!-- /. sblock -->
 
                 
-
+<div class = "container">
         <!-- Service Tabs -->
         <div class="row">
             <div class="col-lg-12">
               
 </br>
+</br>
 
             </div>
+            </div>
+            <!-- /.row -->
+            <div class="row">
             <div class="col-lg-12">
-
                 <ul id="myTab" class="nav nav-tabs nav-justified">
                     <li class="active"><a href="#Android" data-toggle="tab"><img src="<c:url value = "/resources/images/grails.jpg "/>"  alt="">
  </a>
@@ -79,8 +90,11 @@
                     </div>
                                     </div> <!-- ./tab content -->
 
-            </div><!-- ./row -->
+          <!--   </div>./row
 
+        </div>./container -->
+        </div>
+</div><!-- ./row -->
         </div><!-- ./container -->
 
         
