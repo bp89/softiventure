@@ -23,9 +23,36 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
 				<configuration>
 					<source>${jdk.version}</source>
 					<target>${jdk.version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>9.2.3.v20140905</version>
+				<configuration>
+					<contextPath>/softiventure</contextPath>
+					<stopPort>9933</stopPort>
+					<stopKey>jetty-stop</stopKey>
+					<!-- Redeploy every x seconds if changes are detected, 0 for no automatic 
+						redeployment -->
+					<scanIntervalSeconds>0</scanIntervalSeconds>
+					<connectors>
+						<connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
+							<port>8259</port>
+							<maxIdleTime>60000</maxIdleTime>
+						</connector>
+						<connector implementation="org.mortbay.jetty.security.SslSocketConnector">
+							<port>7003</port>
+							<maxIdleTime>60000</maxIdleTime>
+							<keystore>/etc/keys/keystore</keystore>
+							<password>softiventure</password>
+							<keyPassword>softiventure</keyPassword>
+						</connector>
+					</connectors>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -68,23 +95,15 @@
 			<version>${spring.version}</version>
 		</dependency>
 
-<!-- <dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
-			<version>${spring.version}</version>
-			<exclusions>
-				Exclude Commons Logging in favor of SLF4j
-				<exclusion>
-					<groupId>commons-logging</groupId>
-					<artifactId>commons-logging</artifactId>
-				 </exclusion>
-			</exclusions>
-		</dependency> -->
+		<!-- <dependency> <groupId>org.springframework</groupId> <artifactId>spring-context</artifactId> 
+			<version>${spring.version}</version> <exclusions> Exclude Commons Logging 
+			in favor of SLF4j <exclusion> <groupId>commons-logging</groupId> <artifactId>commons-logging</artifactId> 
+			</exclusion> </exclusions> </dependency> -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context-support</artifactId>
 			<version>${spring.version}</version>
-			</dependency>
+		</dependency>
 		<!-- Spring Security -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
@@ -117,15 +136,15 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>${mysql_connector.version}</version>
 		</dependency>
-		
-		<!-- sitemesh -->
-	<dependency>
- <groupId>org.sitemesh</groupId>
- <artifactId>sitemesh</artifactId>
- <version>${sitemesh.version}</version>
-</dependency>
 
-		
+		<!-- sitemesh -->
+		<dependency>
+			<groupId>org.sitemesh</groupId>
+			<artifactId>sitemesh</artifactId>
+			<version>${sitemesh.version}</version>
+		</dependency>
+
+
 		<!-- Servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -144,40 +163,31 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-		
-		<!-- mail -->
-			<!-- <dependency>
-	<groupId>org.codehaus.plexus</groupId>
-	<artifactId>plexus-mail-sender-javamail</artifactId>
-	<version>1.0-alpha-7</version>
-</dependency> -->    
- <dependency>
-	<groupId>commons-fileupload</groupId>
-	<artifactId>commons-fileupload</artifactId>
-	<version>1.2.2</version>
-</dependency>
-<dependency>
-	<groupId>commons-io</groupId>
-	<artifactId>commons-io</artifactId>
-	<version>2.3</version>
-</dependency>
 
- <dependency>
-	    <groupId>javax.mail</groupId>
-	    <artifactId>mail</artifactId>
-	    <version>1.4.3</version>
-    </dependency>  
-    
-   <!--  <dependency>
-	<groupId>org.springframework.integration</groupId>
-	<artifactId>spring-integration-mail</artifactId>
-	<version>4.0.3.RELEASE</version>
-</dependency> -->
-    
-	<!-- <dependency>
-	<groupId>org.codehaus.plexus</groupId>
-	<artifactId>plexus-mail-sender-javamail</artifactId>
-	<version>1.0-alpha-7</version>
-</dependency>  -->
+		<!-- mail -->
+		<!-- <dependency> <groupId>org.codehaus.plexus</groupId> <artifactId>plexus-mail-sender-javamail</artifactId> 
+			<version>1.0-alpha-7</version> </dependency> -->
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.3</version>
+		</dependency>
+
+		<!-- <dependency> <groupId>org.springframework.integration</groupId> <artifactId>spring-integration-mail</artifactId> 
+			<version>4.0.3.RELEASE</version> </dependency> -->
+
+		<!-- <dependency> <groupId>org.codehaus.plexus</groupId> <artifactId>plexus-mail-sender-javamail</artifactId> 
+			<version>1.0-alpha-7</version> </dependency> -->
 	</dependencies>
 </project>
