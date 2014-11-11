@@ -154,6 +154,7 @@ We deliver significant value to our customers by providing cutting edge technolo
             </div><!-- row -->
         </div> <!-- /container -->
     </section>
+    
      <!-- Script to Activate the Carousel -->
      <!-- jQuery Version 1.11.0 -->
     <script src="<c:url value="/resources/js/jquery-1.11.0.js"/>"></script>
@@ -164,6 +165,5 @@ We deliver significant value to our customers by providing cutting edge technolo
         interval: 5000 //changes the speed
     })
     </script>
-
 </body>
 </html>

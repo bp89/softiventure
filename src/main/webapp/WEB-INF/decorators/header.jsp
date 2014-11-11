@@ -29,7 +29,7 @@
 			</button>
 			<a href='index.html'><img
 				src="<c:url value = "/resources/images/logo.png"/>"
-				alt='W3Schools.com' width='200' height='60' style='border: 0;'></a>
+				alt='SoftIventure' width='200' height='60' style='border: 0;'></a>
 
 		</div>
 		<!-- Collect the nav links, forms, and other content for toggling -->

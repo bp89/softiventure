@@ -17,6 +17,7 @@
 		<spring.security.version>3.2.5.RELEASE</spring.security.version>
 		<context.path>SP_SC_Hibernate</context.path>
 		<sitemesh.version>3.0-alpha-2</sitemesh.version>
+		<jetty.port>8259</jetty.port>
 	</properties>
 	<build>
 		<finalName>${pom.artifactId}</finalName>
@@ -42,15 +43,8 @@
 					<scanIntervalSeconds>0</scanIntervalSeconds>
 					<connectors>
 						<connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
-							<port>8259</port>
+							<port>${jetty.port}</port>
 							<maxIdleTime>60000</maxIdleTime>
-						</connector>
-						<connector implementation="org.mortbay.jetty.security.SslSocketConnector">
-							<port>7003</port>
-							<maxIdleTime>60000</maxIdleTime>
-							<keystore>/etc/keys/keystore</keystore>
-							<password>softiventure</password>
-							<keyPassword>softiventure</keyPassword>
 						</connector>
 					</connectors>
 				</configuration>

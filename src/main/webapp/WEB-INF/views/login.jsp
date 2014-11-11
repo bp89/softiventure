@@ -1,13 +1,19 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
 <title>Login</title>
+<style type="text/css">
+
+</style>
 </head>
 <body >
 <div class="jumbotron">
     <div class="container-fluid">
-        <h2>Link Share</h2>
-        <h6>Share what you want to.</h6>
+        <h2><img
+				src="<c:url value = "/resources/images/logo.png"/>"
+				alt='SoftIventure' width='200' height='60' style='border: 0;'></h2>
+        <h6>Think Innovation.</h6>
     </div>
 </div>
 <!--login modal-->

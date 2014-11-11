@@ -5,33 +5,27 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta charset="utf-8">
+	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>SoftIVenture</title>
 <!-- Bootstrap Core CSS -->
     <link href="<c :url value = "/resources/css/bootstrap.min.css"/>" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="<c:url value = "/resources/css/modern-business.css"/>" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="<c:url value = "/resources/font-awesome-4.1.0/css/font-awesome.min.css"/>" rel="stylesheet" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]--><%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
+    <![endif]-->
 </head>
 <body>
  <!-- Page Content -->
@@ -82,7 +76,7 @@
                 <p><i class="fa fa-mobile"></i> 
                     <abbr title="Phone">M</abbr>: +91 - 9654532022</p>
                 <p><i class="fa fa-envelope-o"></i> 
-                    <abbr title="Email">E</abbr>: <a href="mailto:name@example.com">softiventure@gmail.com</a>
+                    <abbr title="Email">E</abbr>: <a href="mailto:softiventure@gmail.com">softiventure@gmail.com</a>
                 </p>
                <!-- <p><i class="fa fa-clock-o"></i> 
                     <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p> -->
@@ -145,10 +139,7 @@
 
         </div>
         <!-- /.row -->
-
         <hr>
-
-
 <!-- jQuery Version 1.11.0 -->
  <script src="<c:url value="/resources/js/jquery-1.11.0.js"/>"></script>
  
@@ -173,10 +164,7 @@
                 });
             });
             </script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="<c:url value="/resources/js/bootstrap.min.js"/>"></script>
-
-
 </body>
 </html>

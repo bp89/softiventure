@@ -14,12 +14,7 @@ import com.softiventure.beans.login.Users;
 @Controller
 public class LoginController {
 
-	/*@RequestMapping(value = { "/", "/home" })
-	public String getUserDefault() {
-		return "home";
-	}*/
-
-	@RequestMapping("/login")
+	@RequestMapping("/user/login")
 	public ModelAndView getLoginForm(@ModelAttribute Users users,
 			@RequestParam(value = "error", required = false) String error,
 			@RequestParam(value = "logout", required = false) String logout) {
