@@ -21,7 +21,9 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="text-center">Login</h1>
+                <h1 class="text-center"><img
+				src="<c:url value = "/resources/images/logo.png"/>"
+				alt='SoftIventure' width='200' height='60' style='border: 0;'></h1>
             </div>
 
             <div class="container">
