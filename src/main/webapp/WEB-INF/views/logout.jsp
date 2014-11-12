@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-<title>Login | Beingjavaguys.com</title>
+<title>Logout</title>
 </head>
 <body>
 	<center>

@@ -1,8 +1,12 @@
 package com.softiventure.controller;
 
+import java.util.Enumeration;
+import java.util.HashMap;
 import java.util.Locale;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 /*import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;*/
@@ -23,60 +27,130 @@ public class HomeController {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home(Locale locale, Model model) {
-	//	logger.info("Welcome! The client locale is {}.", locale);
+	public String home(Locale locale, Model model, HttpServletRequest request) {
 		
+		Map<String, String> map = new HashMap<String, String>();
+		 Enumeration headerNames = request.getHeaderNames();
+		while (headerNames.hasMoreElements()) {
+			String key = (String) headerNames.nextElement();
+			String value = request.getHeader(key);
+			map.put(key, value);
+		}
+		System.out.println(map);
+		String cookie=map.get("cookie");
+		String clientid = cookie+"/home";
+		//System.out.println(cookie);
+		
+		 HttpSession session = request.getSession(true);
+
+	    // Increment the hit count for this page. The value is saved
+	    Integer count = (Integer)session.getValue(clientid);
+	    if (count == null)
+	      count = new Integer(1);
+	    else
+	      count = new Integer(count.intValue() + 1);
+	    session.putValue(clientid, count);
+        System.out.println("SessionTracker");
+	    String[] names = session.getValueNames();
+	    for (int i = 0; i < names.length; i++) {
+	      System.out.println(names[i] + ": " + session.getValue(names[i]));
+	    }
 		
 		return "home";
 	}
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
-	public String home1(Locale locale, Model model) {
-		//logger.info("Welcome! The client locale is {}.", locale);
-		
-		
+	public String home1(Locale locale, Model model, HttpServletRequest request) {
+				
+		Map<String, String> map = new HashMap<String, String>();
+		 
+		Enumeration headerNames = request.getHeaderNames();
+		while (headerNames.hasMoreElements()) {
+			String key = (String) headerNames.nextElement();
+			String value = request.getHeader(key);
+			map.put(key, value);
+		}
+		System.out.println(map);
+		String cookie=map.get("cookie");
+		String clientid = cookie+"/home";
+		 HttpSession session = request.getSession(true);
+		    Integer count = (Integer)session.getValue(clientid);
+		    if (count == null)
+		      count = new Integer(1);
+		    else
+		      count = new Integer(count.intValue() + 1);
+		    session.putValue(clientid, count);
+
+		    System.out.println("SessionTracker");
+		    String[] names = session.getValueNames();
+		    for (int i = 0; i < names.length; i++) {
+		      System.out.println(names[i] + ": " + session.getValue(names[i]));
+		    }
 		return "home";
 	}
 	
 
 	@RequestMapping(value = "/webdevelopment", method = RequestMethod.GET)
 	public String web(Locale locale, Model model,HttpServletRequest request) {
-		//logger.info("Welcome web career! The client locale is {}.", locale);
+		Map<String, String> map = new HashMap<String, String>();
+		 
+		Enumeration headerNames = request.getHeaderNames();
+		while (headerNames.hasMoreElements()) {
+			String key = (String) headerNames.nextElement();
+			String value = request.getHeader(key);
+			map.put(key, value);
+		}
+		System.out.println(map);
+		String cookie=map.get("cookie");
+		String clientid = cookie+"/services/web";
+		 HttpSession session = request.getSession(true);
+
+		    // Increment the hit count for this page. The value is saved
+		    Integer count = (Integer)session.getValue(clientid);
+		    if (count == null)
+		      count = new Integer(1);
+		    else
+		      count = new Integer(count.intValue() + 1);
+		    session.putValue(clientid, count);
+
+		    System.out.println("SessionTracker");
+		    String[] names = session.getValueNames();
+		    for (int i = 0; i < names.length; i++) {
+		      System.out.println(names[i] + ": " + session.getValue(names[i]));
+		    }
 		return "webdevelopment";
 	}
 	@RequestMapping(value = "/mobileapps", method = RequestMethod.GET)
 	public String mobile(Locale locale, Model model,HttpServletRequest request) {
 		//logger.info("Welcome mobile career! The client locale is {}.", locale);
+		Map<String, String> map = new HashMap<String, String>();
+		 
+		Enumeration headerNames = request.getHeaderNames();
+		while (headerNames.hasMoreElements()) {
+			String key = (String) headerNames.nextElement();
+			String value = request.getHeader(key);
+			map.put(key, value);
+		}
+		System.out.println(map);
+		String cookie=map.get("cookie");
+		String clientid = cookie+"/services/mobile";
+		 HttpSession session = request.getSession(true);
+
+		    // Increment the hit count for this page. The value is saved
+		    Integer count = (Integer)session.getValue(clientid);
+		    if (count == null)
+		      count = new Integer(1);
+		    else
+		      count = new Integer(count.intValue() + 1);
+		    session.putValue(clientid, count);
+
+		    System.out.println("SessionTracker");
+		    String[] names = session.getValueNames();
+		    for (int i = 0; i < names.length; i++) {
+		      System.out.println(names[i] + ": " + session.getValue(names[i]));
+		    }
 		return "mobileapps";
 	}
-	/*@RequestMapping(value = "/training", method = RequestMethod.GET)
-	public String training(Locale locale, Model model,HttpServletRequest request) {
-		logger.info("Welcome training career! The client locale is {}.", locale);
-		return "training";
-	}*/
-	/*@RequestMapping(value = "/contact", method = RequestMethod.GET)
-	public String contactGet(HttpServletRequest request) {
-
-		return "contact";
-	}*/
 	
-	/* @RequestMapping("/login")
-	    public String login(Model model) {
-	        model.addAttribute("message", "two for login executed just now!");
-	        return "login";
-	    }
-	  
-	    @RequestMapping("/secured/welcome")
-	    public String accessSecuredPage(Model model) {
-	        model.addAttribute("message", "Only you are authenticated and authorized to view this page.");
-	 
-	        return "/secured/welcome";
-	    }
-	    @RequestMapping(value = "/admin", method = RequestMethod.GET)
-		public String admin(Locale locale, Model model) {
-			//logger.info("Welcome! The client locale is {}.", locale);
-			
-			
-			return "admin";
-		}
-*/
+	
+	   
 }

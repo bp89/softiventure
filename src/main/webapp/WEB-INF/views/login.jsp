@@ -28,7 +28,8 @@
 
             <div class="container">
                 <span style="font-size: smaller;color: #116644">${flash.logoutMessage}</span>
-                <span style="font-size: smaller;color: #116644">${flash.invalidLogin}</span>
+              <%--   <span style="font-size: smaller;color: #116644">${flash.invalidLogin}</span> --%>
+                <span style="font-size: smaller;color: #116644">${message}</span>
                 <div class="row">
                     <div class="span4">
                     </div>

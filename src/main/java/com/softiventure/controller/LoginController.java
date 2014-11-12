@@ -1,4 +1,6 @@
 package com.softiventure.controller;
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -6,6 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -14,7 +17,7 @@ import com.softiventure.beans.login.Users;
 @Controller
 public class LoginController {
 
-	@RequestMapping("/user/login")
+	/*@RequestMapping("/user/login")
 	public ModelAndView getLoginForm(@ModelAttribute Users users,
 			@RequestParam(value = "error", required = false) String error,
 			@RequestParam(value = "logout", required = false) String logout) {
@@ -28,7 +31,24 @@ public class LoginController {
 			return new ModelAndView("logout", "message", message);
 		}
 		return new ModelAndView("login", "message", message);
+	}*/
+	@RequestMapping("/login")
+	public ModelAndView getLoginForm(@ModelAttribute Users users,
+			@RequestParam(value = "error", required = false) String error,
+			@RequestParam(value = "logout", required = false) String logout) {
+
+		String message = "";
+		if (error != null) {
+			message = "Incorrect username or password !";
+			//return new ModelAndView("login", "message", message);
+		} /*else if (logout != null) {
+			message = "Logout successful !";
+			return new ModelAndView("home", "message", message);
+		}*/
+		return new ModelAndView("login", "message", message);
 	}
+	
+	
 
 	@RequestMapping("/admin**")
 	public String getAdminProfile() {
