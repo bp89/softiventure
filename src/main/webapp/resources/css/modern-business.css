@@ -324,6 +324,12 @@ background-color: #CCCC99;
 //    background-size: cover;
 }
 
+.contactblock {
+    padding: 0px 0;
+background-color: #FFFFCC;  
+//    background-size: cover;
+}
+
 
 .bg-light-gray {
     background-color: #f7f7f7;

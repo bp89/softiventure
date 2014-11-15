@@ -154,7 +154,105 @@ We deliver significant value to our customers by providing cutting edge technolo
             </div><!-- row -->
         </div> <!-- /container -->
     </section>
-    
+       <div class="sblock">
+     <aside class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="<c:url value = "/resources/images/logos/envato.jpg "/>" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="<c:url value = "/resources/images/logos/designmodo.jpg "/>" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="<c:url value = "/resources/images/logos/themeforest.jpg "/>" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="<c:url value = "/resources/images/logos/creative-market.jpg "/>" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    </div>
+   <!--  <section id="contact"> -->
+ <!-- <div class="contactblock"> -->
+    <div class="container">
+
+       
+      <div class="row">
+            <div class="col-lg-12">
+               
+<p></br></p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Content Row -->
+        <div class="row">
+            <!-- Map Column -->
+            <div class="col-md-8">
+                <!-- Embedded Google Map -->
+
+
+                <iframe width="100%" height="350px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+            </div>
+           
+            <div class="col-md-4">
+                <h3>GET IN TOUCH</h3>
+          
+                <form name="sentMessage" id="contactForm" method="POST" action="contact" >
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <!-- <label>Full Name:</label> -->
+                            <input name = "name" type="text" placeholder = "Name" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                        <!--     <label>Phone Number:</label> -->
+                            <input name = "phone" type="tel" class="form-control" id="phone" placeholder = "Phone" required data-validation-required-message="Please enter your phone number.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <!-- <label>Email Address:</label> -->
+                            <input name = "email" type="email" class="form-control" id="email"  placeholder = "Email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                          <!--   <label>Message:</label> -->
+                            <textarea name= "msg" rows="3" cols="100" class="form-control" id="message" placeholder = "Write Message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Contact Form -->
+        <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+        <div class="row">
+           
+
+        </div>
+        <!-- /.row -->
+        <hr>
+        </div>
+      <!--   </div> -->
+ <!--        </section> -->
      <!-- Script to Activate the Carousel -->
      <!-- jQuery Version 1.11.0 -->
     <script src="<c:url value="/resources/js/jquery-1.11.0.js"/>"></script>
