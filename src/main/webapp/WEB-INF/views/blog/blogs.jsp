@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2>About.........!</h2>
+<h2>List of Blogs.........!</h2>
 </body>
 </html>

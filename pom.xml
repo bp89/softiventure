@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.softiventure</groupId>
-	<artifactId>controller</artifactId>
+	<artifactId>softiventure</artifactId>
 	<name>Softi</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
@@ -34,19 +34,20 @@
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
 				<version>9.2.3.v20140905</version>
-				<configuration>
-					<contextPath>/softiventure</contextPath>
-					<stopPort>9933</stopPort>
-					<stopKey>jetty-stop</stopKey>
-					<!-- Redeploy every x seconds if changes are detected, 0 for no automatic 
-						redeployment -->
-					<scanIntervalSeconds>0</scanIntervalSeconds>
-					<connectors>
-						<connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
-							<port>${jetty.port}</port>
-							<maxIdleTime>60000</maxIdleTime>
-						</connector>
-					</connectors>
+                <configuration>
+                    <!--<jettyXml>jetty.xml,jetty-http.xml,jetty-ssl.xml,jetty-https.xml</jettyXml>-->
+                    <stopPort>9933</stopPort>
+                    <stopKey>jetty-stop</stopKey>
+                    <!-- Redeploy every x seconds if changes are detected, 0 for no automatic
+                        redeployment -->
+                    <scanIntervalSeconds>10</scanIntervalSeconds>
+                    <webApp>
+                        <contextPath>/softiventure</contextPath>
+                    </webApp>
+                    <httpConnector>
+                        <host>localhost</host>
+                        <port>8259</port>
+                    </httpConnector>
 				</configuration>
 			</plugin>
 		</plugins>

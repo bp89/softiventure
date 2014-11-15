@@ -36,7 +36,7 @@
 		<div class="collapse navbar-collapse"
 			id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="home">Home</a></li>
+				<li><a href="home">Company</a></li>
 
 				<!-- <li class="dropdown"><a href="services" class="dropdown-toggle"
 					data-toggle="dropdown">Services</a>
