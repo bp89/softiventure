@@ -44,8 +44,26 @@
                     <div class="form-group">
                         <form:password path="password" placeholder="Password" class="form-control input-lg" title="Please enter Password." />
                     </div>
-                    <div class="form-group">
-                        <%-- <input type="checkbox" name="${rememberMeParameter}" value="remember"/> --%>
+
+                        <%
+                        /* String count =(String)session.getAttribute("counter");
+                        int counter = Integer.parseInt(count); */
+                        int counter = session.getAttribute("counter") !=null ? (Integer)session.getAttribute("counter") : 0;
+                            System.out.println("====counter====="+counter);
+                        if(counter>2){
+                            %>
+                        <div class="form-group">
+                            <table bgcolor="" align="center">
+                                <tr> <td align="center" colspan="2"><jsp:include page="rndExp.jsp" /><br><br>
+                                </td>
+                                    <td></td>
+                                    <td align="center"><form:input path="captchaCode"  placeholder="Code"  class="form-control input-md" title="Please enter Code." required=""/>
+                                    </td></tr>
+                            </table>
+                        </div>
+                        <%}%>
+                        <div class="form-group">
+                            <%-- <input type="checkbox" name="${rememberMeParameter}" value="remember"/> --%>
           <!--               <label for="rememberMe">Remember Me?</label> -->
                        <input id="remember_me" name="_spring_security_remember_me" type="checkbox"/>
                         <label for="remember_me">Remember me?</label>

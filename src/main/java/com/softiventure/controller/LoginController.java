@@ -42,12 +42,12 @@ public class LoginController {
 		String cookie=map.get("cookie");
 		String clientid = cookie+"/login";
 		 HttpSession session = request.getSession(true);
-		 Integer count = (Integer)session.getValue(clientid);
+		 Integer count = (Integer)session.getAttribute("counter");
 		    if (count == null)
 		      count = new Integer(1);
 		    else
 		      count = new Integer(count.intValue() + 1);
-		    session.putValue(clientid, count);
+		    session.setAttribute("counter", count);
 	        System.out.println("SessionTracker");
 		    String[] names = session.getValueNames();
 		    for (int i = 0; i < names.length; i++) {
@@ -55,24 +55,24 @@ public class LoginController {
 		    }
 		String message = "";
 		if (error != null) {
-			if(count<3){
-			message = "Incorrect username or password !";
-			//return new ModelAndView("login", "message", message);
-		}
-			else {
-				
-				message = "You have entered wrong password 2 times !";
-				//String counter=Integer.toString(count);
-				/*session.setAttribute("counter",counter);*/
-				/*session.setAttribute("counter",count);*/
-				request.setAttribute("counter",count);
-				return new ModelAndView("loginWithCaptcha", "message", message);
-				//return new ModelAndView("form", "message", message);
-			}
-		/*else if (logout != null) {
-			message = "Logout successful !";
-			return new ModelAndView("home", "message", message);
-		}*/
+//			if(count<3){
+//			message = "Incorrect username or password !";
+//			//return new ModelAndView("login", "message", message);
+//		}
+//			else {
+//				message = "You have entered incorrect username or password!";
+//				//String counter=Integer.toString(count);
+//				/*session.setAttribute("counter",counter);*/
+//				/*session.setAttribute("counter",count);*/
+//				request.setAttribute("counter",count);
+//				return new ModelAndView("loginWithCaptcha", "message", message);
+//				//return new ModelAndView("form", "message", message);
+//			}
+//		/*else if (logout != null) {
+//			message = "Logout successful !";
+//			return new ModelAndView("home", "message", message);
+//		}*/
+            message = "Incorrect username or password !";
 		}
 		return new ModelAndView("login", "message", message);
 	}
