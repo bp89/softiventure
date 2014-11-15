@@ -59,7 +59,9 @@
 
 </td>
 <td></td>
-<td align="center"><input name="number" type="text"></td></tr>
+<td align="center"><form:input path="captchaCode"  placeholder="Code"  class="form-control input-md" title="Please enter Code." required=""/>
+</td></tr>
+<!-- <input name="number" type="text"> -->
 
 </table>
          </div>  

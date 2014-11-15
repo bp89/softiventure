@@ -61,10 +61,11 @@ public class LoginController {
 		}
 			else {
 				
-				message = "You have entered wrong password more than 2 times !";
+				message = "You have entered wrong password 2 times !";
 				//String counter=Integer.toString(count);
 				/*session.setAttribute("counter",counter);*/
-				session.setAttribute("counter",count);
+				/*session.setAttribute("counter",count);*/
+				request.setAttribute("counter",count);
 				return new ModelAndView("loginWithCaptcha", "message", message);
 				//return new ModelAndView("form", "message", message);
 			}
@@ -79,8 +80,16 @@ public class LoginController {
 	
 
 	@RequestMapping("/admin**")
-	public String getAdminProfile() {
+	public String getAdminProfile(@ModelAttribute Users users,HttpServletRequest request) {
 	//	return "admin";
+		//HttpSession session = request.getSession(true);
+		String code = users.getCaptchaCode();
+		String username = users.getUsername();
+		System.out.println("users code" + code);
+		System.out.println("users username" + username);
+		//String codeStr=Integer.toString(code);
+		//session.setAttribute("code",rstr);
+		request.setAttribute("code",code);
 		return "validate";
 	}
 
