@@ -2,7 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
-<title>Login</title>
+<title>LoginWithCaptcha</title>
 <style type="text/css">
 
 </style>
@@ -29,7 +29,7 @@
             <div class="container">
               <%--   <span style="font-size: smaller;color: #116644">${flash.logoutMessage}</span> --%>
               <%--   <span style="font-size: smaller;color: #116644">${flash.invalidLogin}</span> --%>
-              
+               <%--  <% int val = ${message}.intValue(); %> --%>
                 <span style="font-size: smaller;color: #116644">${message}</span>
                 <div class="row">
                     <div class="span4">
@@ -44,12 +44,32 @@
                     <div class="form-group">
                         <form:password path="password" placeholder="Password" class="form-control input-lg" title="Please enter Password." />
                     </div>
+                   <%--  <%
+                    /* String count =(String)session.getAttribute("counter");
+                    int counter = Integer.parseInt(count); */
+                    int counter =(int)session.getAttribute("counter");
+                
+                    if(counter>2)
+                    	%> --%>
+                    <div class="form-group">
+        
+        <table bgcolor="" align="center">
+
+<tr> <td align="center" colspan="2"><jsp:include page="rndExp.jsp" /><br><br>
+
+</td>
+<td></td>
+<td align="center"><input name="number" type="text"></td></tr>
+
+</table>
+         </div>  
                     <div class="form-group">
                         <%-- <input type="checkbox" name="${rememberMeParameter}" value="remember"/> --%>
           <!--               <label for="rememberMe">Remember Me?</label> -->
                        <input id="remember_me" name="_spring_security_remember_me" type="checkbox"/>
                         <label for="remember_me">Remember me?</label>
                     </div>
+                    
                     <div class="form-group">
                         <input type="submit" name="submit" value="Sign In" class="btn btn-primary btn-lg btn-block" />
                     </div>
@@ -58,6 +78,9 @@
              <div class="span">
            <centre> <a href = "forgotPassword">Forgot Password ?</a></centre>
             </div>
+          
+          <%--   <jsp:include page="form.jsp"></jsp:include> --%>
+         
         </div>
     </div>
 </div>
