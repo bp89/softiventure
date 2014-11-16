@@ -12,55 +12,18 @@
     <meta name="author" content="">
 </head>
 <body>
-<!-- Page Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            </br></br>
-        </div>
+
+<div class="container-fluid">
+    <div class="jumbotron">
+        <h1>Web Development</h1>
+        <h5>We are agile. We use iterative development strategy where teams work in sprints. Each sprint is highly organised. This boosts the development process by 40%.And the project quality is the best in class as we adhere to industry standards.</h5>
     </div>
     <!--  /.row -->
-    <!-- Image Header -->
-    <div class="row">
-        <div class="col-lg-12">
-            <!--  <img class="img-responsive" src="http://placehold.it/1200x300" alt=""> -->
-            <img class="img-responsive" src="<c:url value = "/resources/images/professionals.jpg "/>" height = '1000' width =  '1500' alt="">
-
-        </div>
-    </div>
-    <!-- /.row -->
 </div>
 <!-- /.container -->
-<div class="sblock">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
 
-                </br></br>
+<div class = "container-fluid">
 
-                <h1>Web Development
-
-                </h1>
-
-            </div>
-        </div>
-        <!--  /.row -->
-    </div>
-    <!-- /.container -->
-</div>
-<!-- /. sblock -->
-
-
-<div class = "container">
-    <!-- Service Tabs -->
-    <div class="row">
-        <div class="col-lg-12">
-
-            </br>
-            </br>
-
-        </div>
-    </div>
     <!-- /.row -->
     <div class="row">
         <div class="col-lg-12">
@@ -71,40 +34,23 @@
                 </li>
                 <li class=""><a href="#Java" data-toggle="tab"><img src="<c:url value = "/resources/images/java.jpg "/>" alt=""></a>
                 </li>
-                <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-support"></i> Service Three</a>
-                </li>
-                <li class=""><a href="#service-four" data-toggle="tab"><i class="fa fa-database"></i> Service Four</a>
-                </li>
             </ul>
 
             <div id="myTabContent" class="tab-content">
                 <div class="tab-pane fade active in" id="Grails">
                     <h2>Grails</h2>
-                    <p class = "tabp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                    <p class = "tabp"> <%@include file="services/grails.jsp"%> </p>
                 </div>
                 <div class="tab-pane fade" id="Java">
                     <h2>Java</h2>
-                    <p class = "tabp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                </div>
-                <div class="tab-pane fade" id="service-three">
-                    <h4>Service Three</h4>
-                    <p class = "tabp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                </div>
-                <div class="tab-pane fade" id="service-four">
-                    <h4>Service Four</h4>
-                    <p class = "tabp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                    <p class = "tabp"><%@include file="services/java.jsp"%></p>
                 </div>
             </div> <!-- ./tab content -->
 
         </div>
     </div><!-- ./row -->
 </div><!-- ./container -->
-
-
-
 <hr>
-
 <!-- Script to Activate the Carousel -->
 <!-- jQuery Version 1.11.0 -->
 <script src="<c:url value="/resources/js/jquery-1.11.0.js"/>"></script>
