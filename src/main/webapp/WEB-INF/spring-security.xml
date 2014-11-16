@@ -20,7 +20,7 @@
 		<logout logout-success-url="/home" />	
 		<!-- enable csrf protection -->
 		<!-- <csrf /> -->
-			<remember-me key="softtKey" token-validity-seconds="2419200"/>
+			<remember-me key="softKey" token-validity-seconds="2419200"/>
 	</http>
 
 	<authentication-manager>

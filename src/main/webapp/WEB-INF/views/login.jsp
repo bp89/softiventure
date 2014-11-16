@@ -46,8 +46,7 @@
                     </div>
 
                         <%
-                        /* String count =(String)session.getAttribute("counter");
-                        int counter = Integer.parseInt(count); */
+                       
                         int counter = session.getAttribute("counter") !=null ? (Integer)session.getAttribute("counter") : 0;
                             System.out.println("====counter====="+counter);
                         if(counter>2){

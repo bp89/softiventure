@@ -1,11 +1,7 @@
 package com.softiventure.controller;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Map;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-
+import com.softiventure.beans.login.Users;
+import com.softiventure.service.login.LoginServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -18,14 +14,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.softiventure.beans.login.Users;
-import com.softiventure.service.login.LoginServiceImpl;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Map;
 
 @Controller
 public class LoginController {
     @Autowired
     LoginServiceImpl loginService;
-    //int count = 0;
     @RequestMapping("/login")
     public ModelAndView getLoginForm(@ModelAttribute Users users,HttpServletRequest request,
                                      @RequestParam(value = "error", required = false) String error,
@@ -63,11 +61,11 @@ public class LoginController {
 
     @RequestMapping(value="/admin**", method = RequestMethod.POST)
     public String getAdminProfile(@ModelAttribute Users users,HttpServletRequest request) {
-        System.out.print("-----users--------"+users.getCaptchaCode());
+
         String code = users.getCaptchaCode();
         String username = users.getUsername();
-        System.out.println("users code" + code);
-        System.out.println("users username" + username);
+        System.out.println("users code " + code);
+        System.out.println("users username " + username);
         request.setAttribute("code",code);
         return "validate";
     }
