@@ -9,6 +9,7 @@ import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 @Entity
 @Table(name = "users", catalog = "softUserDB")
@@ -23,7 +24,10 @@ public class Users {
 
 	@Column(name = "enabled", nullable = false)
 	private boolean enabled;
-
+	
+	@Column
+    @Transient
+    String captchaCode;
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
 	private Set<UserRole> userRole = new HashSet<UserRole>(0);
 
@@ -58,5 +62,14 @@ public class Users {
 
 	public void setUserRole(Set<UserRole> userRole) {
 		this.userRole = userRole;
+	
+	}
+
+	public String getCaptchaCode() {
+		return captchaCode;
+	}
+
+	public void setCaptchaCode(String captchaCode) {
+		this.captchaCode = captchaCode;
 	}
 }

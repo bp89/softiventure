@@ -55,4 +55,12 @@ public class LoginServiceImpl implements UserDetailsService {
 		return Result;
 	}
 
+public String providePassword(String username)
+{
+	Users user = loginDao.findByUserName(username);
+
+	String password = user.getPassword();
+	//System.out.println(password);
+	return password;
+}
 }
