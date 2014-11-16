@@ -25,7 +25,6 @@ import com.softiventure.service.login.LoginServiceImpl;
 public class LoginController {
 	@Autowired
 	LoginServiceImpl loginService;
-	//int count = 0;
 	@RequestMapping("/login")
 	public ModelAndView getLoginForm(@ModelAttribute Users users,HttpServletRequest request,
 			@RequestParam(value = "error", required = false) String error,
@@ -55,23 +54,7 @@ public class LoginController {
 		    }
 		String message = "";
 		if (error != null) {
-//			if(count<3){
-//			message = "Incorrect username or password !";
-//			//return new ModelAndView("login", "message", message);
-//		}
-//			else {
-//				message = "You have entered incorrect username or password!";
-//				//String counter=Integer.toString(count);
-//				/*session.setAttribute("counter",counter);*/
-//				/*session.setAttribute("counter",count);*/
-//				request.setAttribute("counter",count);
-//				return new ModelAndView("loginWithCaptcha", "message", message);
-//				//return new ModelAndView("form", "message", message);
-//			}
-//		/*else if (logout != null) {
-//			message = "Logout successful !";
-//			return new ModelAndView("home", "message", message);
-//		}*/
+
             message = "Incorrect username or password !";
 		}
 		return new ModelAndView("login", "message", message);
@@ -79,16 +62,14 @@ public class LoginController {
 	
 	
 
-	@RequestMapping("/admin**")
+	@RequestMapping(value="/admin**")
 	public String getAdminProfile(@ModelAttribute Users users,HttpServletRequest request) {
-	//	return "admin";
-		//HttpSession session = request.getSession(true);
+	
 		String code = users.getCaptchaCode();
 		String username = users.getUsername();
-		System.out.println("users code" + code);
-		System.out.println("users username" + username);
-		//String codeStr=Integer.toString(code);
-		//session.setAttribute("code",rstr);
+		System.out.println("users code " + code);
+		System.out.println(users);
+		System.out.println("users username " + username);
 		request.setAttribute("code",code);
 		return "validate";
 	}
@@ -118,6 +99,7 @@ public class LoginController {
 	@RequestMapping(value = "/forgotPassword", method = RequestMethod.POST)
 	public ModelAndView getpasswordRecovery(@ModelAttribute Users users) {
 		String username= users.getUsername();
+		System.out.println("users username " + username);
 		String password = loginService.providePassword(username);
 		return new ModelAndView("recoverPassword", "password", password);
 			}
