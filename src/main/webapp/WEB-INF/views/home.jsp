@@ -56,7 +56,7 @@
                    <!--  <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>  -->
                 </div>
       </div> <!-- row -->
-            <div class="row text-center">
+            <div class="row text-left">
                 <div class="col-md-3">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
