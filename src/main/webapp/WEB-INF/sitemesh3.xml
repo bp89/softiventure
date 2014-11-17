@@ -6,5 +6,6 @@
    <mapping path="/footer" decorator="/WEB-INF/decorators/defaultDecorator.jsp"/> -->
     <mapping path="/*" decorator="/WEB-INF/decorators/defaultDecorator.jsp"/>
     <mapping path="/login" decorator="/WEB-INF/decorators/baseDecorator.jsp"/>
+    <mapping path="/forgotPassword" decorator="/WEB-INF/decorators/baseDecorator.jsp"/>
    <!--   <mapping path="/secured/*" decorator=""/> -->
 </sitemesh>
