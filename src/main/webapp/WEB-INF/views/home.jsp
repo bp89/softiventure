@@ -154,7 +154,7 @@ We deliver significant value to our customers by providing cutting edge technolo
             </div><!-- row -->
         </div> <!-- /container -->
     </section>
-       <div class="sblock">
+      <%--  <div class="sblock">
      <aside class="clients">
         <div class="container">
             <div class="row">
@@ -181,7 +181,7 @@ We deliver significant value to our customers by providing cutting edge technolo
             </div>
         </div>
     </aside>
-    </div>
+    </div> --%>
    <!--  <section id="contact"> -->
  <!-- <div class="contactblock"> -->
     <div class="container">
@@ -206,7 +206,7 @@ We deliver significant value to our customers by providing cutting edge technolo
             </div>
            
             <div class="col-md-4">
-                <h3>GET IN TOUCH</h3>
+                <h3>CONTACT US</h3>
           
                 <form name="sentMessage" id="contactForm" method="POST" action="contact" >
                     <div class="control-group form-group">
